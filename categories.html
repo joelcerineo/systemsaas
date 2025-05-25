@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - SHOP IT!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (Same across all pages) -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+                <span class="logo-text">SHOP IT!</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="products.html">Products</a>
+                <a href="categories.html" class="active">Categories</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html" class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge">3</span>
+                </a>
+            </div>
+            
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="products.html">Products</a>
+            <a href="categories.html" class="active">Categories</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart (3)</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Product Categories</h1>
+            <p>Browse our products by category</p>
+        </div>
+
+        <!-- Categories Display -->
+        <div class="categories-large-grid">
+            <!-- Category 1 -->
+            <div class="category-large-card">
+                <div class="category-large-image">
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=2068&auto=format&fit=crop" alt="Laptops and Computers">
+                    <div class="category-large-overlay"></div>
+                </div>
+                <div class="category-large-content">
+                    <div class="category-large-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h2>Laptops & Computers</h2>
+                    <p>Powerful machines for coding, development, and everything a BSIT student needs</p>
+                    <a href="products.html?category=laptops" class="btn">Browse Laptops</a>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="category-large-card">
+                <div class="category-large-image">
+                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=1974&auto=format&fit=crop" alt="Components">
+                    <div class="category-large-overlay"></div>
+                </div>
+                <div class="category-large-content">
+                    <div class="category-large-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h2>Components</h2>
+                    <p>Build or upgrade your system with the latest hardware components</p>
+                    <a href="products.html?category=components" class="btn">Browse Components</a>
+                </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="category-large-card">
+                <div class="category-large-image">
+                    <img src="https://images.unsplash.com/photo-1618410320928-25c9af417d46?q=80&w=2070&auto=format&fit=crop" alt="Storage Solutions">
+                    <div class="category-large-overlay"></div>
+                </div>
+                <div class="category-large-content">
+                    <div class="category-large-icon">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h2>Storage Solutions</h2>
+                    <p>Store your projects, assignments and data securely with our range of storage options</p>
+                    <a href="products.html?category=storage" class="btn">Browse Storage</a>
+                </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="category-large-card">
+                <div class="category-large-image">
+                    <img src="https://images.unsplash.com/photo-1613141411244-0e4ac259d217?q=80&w=2070&auto=format&fit=crop" alt="Accessories">
+                    <div class="category-large-overlay"></div>
+                </div>
+                <div class="category-large-content">
+                    <div class="category-large-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h2>Accessories</h2>
+                    <p>Enhance your tech setup with keyboards, mice, headphones, and more</p>
+                    <a href="products.html?category=accessories" class="btn">Browse Accessories</a>
+                </div>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="category-large-card">
+                <div class="category-large-image">
+                    <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=1770&auto=format&fit=crop" alt="Software">
+                    <div class="category-large-overlay"></div>
+                </div>
+                <div class="category-large-content">
+                    <div class="category-large-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2>Software & Tools</h2>
+                    <p>Essential software for development, design, and productivity</p>
+                    <a href="products.html?category=software" class="btn">Browse Software</a>
+                </div>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="category-large-card">
+                <div class="category-large-image">
+                    <img src="https://images.unsplash.com/photo-1623126464548-923a535f238d?q=80&w=1770&auto=format&fit=crop" alt="Study Materials">
+                    <div class="category-large-overlay"></div>
+                </div>
+                <div class="category-large-content">
+                    <div class="category-large-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h2>Study Materials</h2>
+                    <p>Books, courses, and resources to excel in your BSIT program</p>
+                    <a href="products.html?category=study" class="btn">Browse Materials</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Same across all pages) -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+                <span class="logo-text">SHOP IT!</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2023 SHOP IT! All rights reserved. Created for BSIT Students.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

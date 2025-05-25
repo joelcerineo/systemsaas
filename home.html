@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASHDRIVE SaaS - Secure Cloud Storage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts - VT323 for hacker style -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background-color: #000a1f; color: #b0c4de; }
+        .navbar { background: linear-gradient(90deg, #001f3f, #003366, #004080); box-shadow: 0 0 10px #00ccff; }
+        .navbar-brand span { text-shadow: 0 0 10px #00ffff; }
+        .nav-link { color: #00ccff !important; transition: 0.3s; }
+        .nav-link:hover { text-shadow: 0 0 10px #00ffff; transform: scale(1.1); }
+        .carousel-item img { filter: brightness(80%); }
+        .carousel-caption { background: rgba(0, 0, 50, 0.6); padding: 20px; border-radius: 10px; }
+        .glitch-text { color: #00ccff; text-shadow: 0 0 10px #00ffff; animation: glitch 1.5s infinite alternate; }
+        @keyframes glitch { 0% { text-shadow: 2px 2px #00ccff; } 100% { text-shadow: -2px -2px #00ffff; } }
+        .pricing-card { border: 1px solid #00ccff; box-shadow: 0 0 10px #00ffff; }
+        .pricing-card:hover { transform: scale(1.05); transition: 0.3s; }
+        .plan-btn { background: #00ccff; color: #000; transition: 0.3s; }
+        .plan-btn:hover { background: #0099cc; box-shadow: 0 0 10px #00ffff; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold">CLOUDS STORAGE</span>
+            </a>
+            <button class="navbar-toggler border-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section with Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="create image Secure & Scalable Cloud Storage.jpeg" class="d-block w-100" alt="Secure Cloud Storage">
+                <div class="carousel-caption">
+                    <h1 class="glitch-text">Secure & Scalable Cloud Storage</h1>
+                    <p>Encrypted data solutions for businesses and individuals.</p>
+                    <a href="pricing.html" class="btn btn-outline-light btn-lg">View Plans</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="AI-Powered SecurityAdvanced encryption and AI monitoring for ultimate protection.jpeg" class="d-block w-100" alt="AI Security">
+                <div class="carousel-caption">
+                    <h1 class="glitch-text">AI-Powered Security</h1>
+                    <p>Advanced encryption and AI monitoring for ultimate protection.</p>
+                    <a href="features.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Pricing Plans Section -->
+    <section class="container my-5 text-center">
+        <h2 class="glitch-text">Choose Your Plan</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card pricing-card h-100 bg-dark text-light">
+                    <div class="card-header bg-primary text-light">Basic Plan</div>
+                    <div class="card-body">
+                        <h3 class="price">₱499<span class="small">/month</span></h3>
+                        <p>10GB Secure Cloud Storage</p>
+                        <button class="btn plan-btn w-100">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pricing-card h-100 bg-dark text-light">
+                    <div class="card-header bg-info text-light">Pro Plan</div>
+                    <div class="card-body">
+                        <h3 class="price">₱999<span class="small">/month</span></h3>
+                        <p>100GB Secure Cloud Storage</p>
+                        <button class="btn plan-btn w-100">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pricing-card h-100 bg-dark text-light">
+                    <div class="card-header bg-success text-light">Enterprise Plan</div>
+                    <div class="card-body">
+                        <h3 class="price">₱4999<span class="small">/month</span></h3>
+                        <p>Unlimited Secure Cloud Storage</p>
+                        <button class="btn plan-btn w-100">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 CLOUDSTORAGE GMAIL:CLOUDS@MGMAIL.COM</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Client Info & Receipt -->
+    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="purchaseModalLabel">Complete Your Purchase</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="purchaseForm">
+                        <div class="mb-3">
+                            <label for="clientName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="clientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="clientEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Selected Plan</label>
+                            <input type="text" class="form-control" id="selectedPlan" readonly>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Confirm & Generate Receipt</button>
+                    </form>
+                    <div id="receipt" class="mt-4 d-none">
+                        <h5>Receipt</h5>
+                        <p><strong>Name:</strong> <span id="receiptName"></span></p>
+                        <p><strong>Email:</strong> <span id="receiptEmail"></span></p>
+                        <p><strong>Plan:</strong> <span id="receiptPlan"></span></p>
+                        <div class="alert alert-success mt-3">Thank you! Your purchase was successful.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const planButtons = document.querySelectorAll('.plan-btn');
+        const selectedPlanInput = document.getElementById('selectedPlan');
+        const purchaseModal = new bootstrap.Modal(document.getElementById('purchaseModal'));
+
+        planButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card');
+                const planName = card.querySelector('.card-header').textContent.trim();
+                const price = card.querySelector('.price').textContent.trim();
+                selectedPlanInput.value = `${planName} - ${price}`;
+                document.getElementById('purchaseForm').reset();
+                document.getElementById('receipt').classList.add('d-none');
+                purchaseModal.show();
+            });
+        });
+
+        document.getElementById('purchaseForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value;
+            const email = document.getElementById('clientEmail').value;
+            const plan = document.getElementById('selectedPlan').value;
+
+            document.getElementById('receiptName').textContent = name;
+            document.getElementById('receiptEmail').textContent = email;
+            document.getElementById('receiptPlan').textContent = plan;
+
+            document.getElementById('receipt').classList.remove('d-none');
+        });
+    </script>
+</body>
+</html>

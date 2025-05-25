@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Clouds Storage</title>
+
+  <!-- Bootstrap and Fonts -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts - VT323 for hacker style -->
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      background-color: #000a1f;
+      color: #b0c4de;
+      font-family: 'VT323', monospace;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #001f3f, #003366, #004080);
+      box-shadow: 0 0 10px #00ccff;
+    }
+    .navbar-brand span {
+      text-shadow: 0 0 10px #00ffff;
+    }
+    .nav-link {
+      color: #00ccff !important;
+      transition: 0.3s;
+    }
+    .nav-link:hover {
+      text-shadow: 0 0 10px #00ffff;
+      transform: scale(1.1);
+    }
+    h1, h2, h4, h5 {
+      color: #00ccff;
+    }
+    .form-control, .form-select, .btn {
+      border-radius: 0.5rem;
+    }
+    .btn-primary {
+      background-color: #004080;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0059b3;
+    }
+    iframe {
+      border: 0;
+      border-radius: 10px;
+      width: 100%;
+      height: 300px;
+      box-shadow: 0 0 10px #00ccff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="fw-bold">CLOUDS STORAGE</span></a>
+      <button class="navbar-toggler border-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="container my-5 p-4" style="background-color: #002244; border-radius: 15px; box-shadow: 0 0 15px #00ccff;">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="First Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Last Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email Address" required>
+        </div>
+        <div class="col-md-6">
+          <input type="tel" class="form-control" placeholder="Phone Number">
+        </div>
+        <div class="col-md-12">
+          <select class="form-select" required>
+            <option value="">-- Select a Subject --</option>
+            <option>Technical Support</option>
+            <option>Billing Inquiry</option>
+            <option>Business Inquiry</option>
+            <option>Feedback</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label text-info">Preferred Contact Method</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="contactMethod" id="byEmail" value="Email" checked>
+            <label class="form-check-label" for="byEmail">Email</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="contactMethod" id="byPhone" value="Phone">
+            <label class="form-check-label" for="byPhone">Phone</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Best Time to Contact (e.g., 9AM - 5PM)">
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="subscribe">
+            <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-5">Send Message</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Map & Contact Info -->
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h4 class="text-info">Our Location</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.089451419981!2d-122.41941518468153!3d37.774929779759595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b27e7cb%3A0x3cfca4f7e265d638!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1614092497590!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h4 class="text-info">Branch Office</h4>
+        <p>
+          Clouds Storage HQ<br>
+          123 Tech Avenue<br>
+          San Francisco, CA 94103<br><br>
+          <strong>Email:</strong> <i class="fas fa-envelope"></i> support@cloudsstorage.com<br>
+          <strong>Phone:</strong> <i class="fas fa-phone"></i> +1 (800) 123-4567
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Clouds Storage | Email: support@cloudsstorage.com</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
